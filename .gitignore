@@ -21,7 +21,7 @@ import scipy
 
 from scipy import signal
 
-data = pd.read_csv('HAPTD12.csv')
+data = pd.read_csv('HAPTIC7.csv')
 df = data[100:2000]
 
 print (df)
