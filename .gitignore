@@ -87,6 +87,14 @@ new_signal = np.convolve(list(map(float,s)), sinc_func)
 new_signal1 = np.convolve(list(map(float,t)), sinc_func)
 new_signal2 = np.convolve(list(map(float,u)), sinc_func)
 
+# Simplifying for calculating "G"
+G = 62.33
+new_signal = (new_signal * 1000)/G
+new_signal1 = (new_signal1 * 1000)/G
+new_signal2 = (new_signal2 * 1000)/G
+print(new_signal)
+
+
 # sliced array on X-axis
 offset_start = 200
 offset_stop = -200
